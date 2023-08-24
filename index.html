@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speed game</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Camera shutterspeed game - Take as many shots of the squirrel as you can before it goes away." />
+
+  <link rel="canonical" href="https://aces563.github.io/speedgame/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Shutterspeed game" />
+  <meta property="og:description" content="Camera shutterspeed game - Take as many shots of the squirrel as you can before it goes away." />
+  <meta property="og:url" content="https://aces563.github.io/speedgame/" />
+
+
+  <meta property="og:image"
+    content="https://aces563.github.io/speedgame/speedgame.png" />
+
+  <meta property="og:image:secure_url"
+    content="https://aces563.github.io/speedgame/speedgame.png" />
+  <meta property="og:image:width" content=" 300 " />
+  <meta property="og:image:height" content=" 300 " />
+  <meta property="og:image:alt" content="Shutterspeed game" />
+  <meta property="og:image:type" content="image/png " />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <h1 class="game-title">Speed Game</h1>
+  
+  <main>
+    <div class="modal-container">
+      <div class="modal-box">
+        <span class="modal-close-button">x</span>
+        <h2 id="game-score">score</h2>
+        <p class="feedback"></p>
+        <div>
+          <figure>
+
+            <img class="camera" src="camera.jpg" alt="camera lens">
+            <figcaption>Photo by ShareGrid on Unsplash
+
+            </figcaption>
+          </figure>
+        </div>
+
+
+      </div>
+
+    </div>
+    <h2 class="shots-taken">Shots taken: <span id="score"></span></h2>
+
+    <div class="symbol-container">
+      <button class="symbol symbol1"></button>
+      <button class="symbol symbol2"></button>
+      <button class="symbol symbol3"></button>
+      <button class="symbol symbol4"></button>
+    </div>
+
+    <div class="form-container">
+      <form>
+        <div class="buttons-container">
+          <label for="start" class="start-button">Start</label>
+          <input type="radio" id="start" name="switch" />
+
+          <label for="stop" class="end-button">Stop</label>
+          <input type="radio" id="stop" name="switch" checked />
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
